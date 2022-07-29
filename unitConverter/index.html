@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit converter</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: black;
+        }
+        .container{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container h1{
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .container button{
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+        }
+        .inputItem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            color: white;
+            font-size: medium;
+        }
+        .inputItem input{
+            width: 75%;
+            margin: 0 0 0 10px;
+        }
+        .ans{
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- heading -->
+        <h1>Unit converter</h1>
+        <!-- input -->
+        <div class="inputItem">
+            <h6>Feet</h6> 
+            <input type="text" name="value">
+        </div>
+        <!-- convert button -->
+        <button>Convert to cm</button>
+        <!-- answer -->
+        <p class="ans"></p>
+    </div>
+    <!-- Javascript here -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
